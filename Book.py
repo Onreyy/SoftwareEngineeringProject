@@ -10,6 +10,7 @@ class Book:
         idCounter += 1
 
     def setCategory(self, category):
+            category = category.lower()
             if category in ['non-fiction', 'fiction', 'reference']:
                 self.__category = category
             else:
